@@ -1,5 +1,5 @@
 # Dump-Lsass
-Automates the manual process of using wmiexec and procdump to dump Lsass and plaintext creds or hashes across a large number of systems.
+Automates the manual process of using wmiexec and procdump to dump Lsass and plaintext creds or hashes across a large number of systems. After dumping lsass, you should have an lsass.dmp file and a plaintext file with mimikatz (pypykatz) output for each host in the same directory 
 
 To dump lsass.exe process memory without triggering antivirus, I would normally use Impacket wmiexec.py and procdump64.exe as follows:
 
@@ -34,3 +34,5 @@ Run examples:
 python3 dumpLsass.py -d CONTOSO -u administrator -p Passw0rd\! -f </path/to/file with target IP addresses or hostnames.txt>
 python3 dumpLsass.py -d CONTOSO -u administrator -H <NT Hash> -f </path/to/file with target IP addresses or hostnames.txt>
 ```
+
+If pypykatz is unable to dump creds from the dump files, your target is most likely running a recent Windows build which pypykatz and mimikatz no longer works.
