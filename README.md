@@ -29,7 +29,7 @@ cd /opt/impacket && pip install -r requirements.txt && python setup.py install
 
 apt install -y smbclient
 
-pip3 install pypykatz
+Install pypykatz from Github, do not install using pip: https://github.com/skelsec/pypykatz
 
 Run examples:
 ```
