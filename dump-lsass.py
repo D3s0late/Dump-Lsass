@@ -14,11 +14,9 @@ args = parser.parse_args()
 usage = """This script automates multiple tools used to dump the lsass.exe
 process memory to a file, download the dump file, and dump domain credentials.
 
-Prerequisites: Procdump64.exe must be in the same directory as the script, impacket at path /opt/impacket, smbclient, pypykatz.
+Prerequisites: Procdump64.exe must be in the same directory as the script, smbclient, pypykatz.
 To install prereqs:
 Download procdump64.exe to the same directory as the script.
-git clone https://github.com/SecureAuthCorp/impacket.git /opt/impacket
-cd /opt/impacket && pip install -r requirements.txt && python setup.py install
 apt install -y smbclient
 pip3 install pypykatz
 
